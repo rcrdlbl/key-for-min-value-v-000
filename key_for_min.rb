@@ -9,5 +9,6 @@ def key_for_min_value(name_hash)
       last_key = key
       if value < last_value
         names.delete(key)
+      end
 
 end
