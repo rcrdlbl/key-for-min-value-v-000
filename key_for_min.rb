@@ -4,5 +4,7 @@
 def key_for_min_value(name_hash)
   names = name_hash
   while names.length > 1
-    names.each do |key, value|  
+    names.each do |key, value|
+      last_value = value
+      if key < last_key
 end
