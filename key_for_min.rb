@@ -3,8 +3,11 @@
 
 def key_for_min_value(name_hash)
   names = name_hash
-  while names.length > 1
-    names.each do |key, value|
+  name_hash.each do |key, value|
+    while names.length > 1
       last_value = value
-      if key < last_key
+      last_key = key
+      if value < last_value
+        names.delete(key)
+
 end
